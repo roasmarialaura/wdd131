@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Patrick+Hand&display=swap');
+
+/* my home page */
+
+body {
+   
+    background-color:white; 
+    font-family: Bree, Georgia, serif;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    max-width: 750px;
+    margin: 0 auto;   
+}
+header {
+    background-color:#042e69 ;
+    display:block;
+    justify-content: center;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #010711;
+    text-align: center;
+}
+nav a {
+    
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 1.5em;
+  
+}
+nav a:hover {
+    background-color: #044872;
+    color: black;
+    border-radius: 3px;
+} 
+.card {
+    display: grid;
+    grid-template-columns:(1fr, 1fr)
+    
+}
+image {
+    float: right;
+}
+card-image {
+        max-width: 100%;
+        height: auto;
+}
+footer {
+    background-color:#1d3557;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}  
+
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 1vw;
+    }
+} 
