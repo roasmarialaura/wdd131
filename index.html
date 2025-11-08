@@ -6,47 +6,90 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Maria Laura Roas</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Maria Laura Roas- My home page">
     <meta name="author" content="Maria Laura Roas">
-    <link type="text/css" rel="stylesheet" href="styles/base.css">
-    <script defer src="getdate.js"></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 id="course-title">WDD 131 - Dynamic Web Fundamentals - Maria Laura Roas</h1>
+        <h1 
+            <span id="course-title">WDD 131 - Dynamic Web Fundamentals -</span>
+            <span id="name">Maria Laura Roas</span>
+        </h1>
         <nav>
             <ul>
-                <a href="www.linkedin.com/in/maria-laura-roas-071b14267">LinkedIn</a>
-                <a href="https://byupw.instructure.com/.">Canvas</a>
-                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/1?lang=eng&id=p29#p29">Scripture</a>
-                <a href="">Final Projects</a>
-            </ul>
+                <li>
+                    <a href="www.linkedin.com/in/maria-laura-roas-071b14267">LinkedIn</a>
+                    <a href="https://byupw.instructure.com/.">Canvas</a>
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/1?lang=eng&id=p29#p29">Scripture</a>
+                    <a href="">Final Projects</a>
+                </li>
+            </ul>  
         </nav>
     </header>
     <main>
-        <h1>Maria Laura Roas</h1>
+        
         <section class="card">
-            <div class="card-image">
-                <h2>About Me</h2>
-                <img src="/wdd131/images/1805aa0d-58c5-409c-b22b-656c1b13794f.jpg" alt="Maria Laura Roas" class="image">
-            </div>
-            <div class="card-content">
+            <h2>About Me</h2>
+            <div class="profile">
+                <img src="images/myfoto.png" alt="Maria Laura Roas" class="image">
                 <p>My name is Laura. I was born in Formosa, Argentina, but moved to Córdoba 11 years ago. 
                     I'm a mother to four children who are my treasures, and I love spending time with them. 
                     I study software development at BYU-Pathway Worldwide. 
                     I serve as a counselor for my ward's Relief Society and love working with FamilySearch.</p>
 
+            </div>
+            <div class="country">
+                <h3>Argentina</h3>
+                <figure>
+                    <img src="images/bandera-de-argentina.jpg" alt="Argentina">
+                    <figcaption>Official flag of Argentina</figcaption>
+                    <figcaption href="https://www.freepik.es/foto-gratis/bandera-argentina_1178777.htm">Imagen de www.slon.pics en Freepik</figcaption>
+                </figure>
+                <p>Argentina, officially the Argentine Republic, is a country in the southern half of South America. 
+                    It covers an area of 2,780,085 km2 (1,073,397 sq mi), making it the second-largest country in South America after Brazil, 
+                    the fourth-largest country in the Americas, and the eighth-largest country in the world.(Wikipedia)</p>
+
             </div> 
-
-
         </section>
-        <section class="card">
+        <section class="card-resources">
             <h2>Web Dev Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://dev.to/discover">Dev.to Community</a>
+                </li>
+                <li>
+                    <a href="https://www.smashingmagazine.com">Smashing Magazine</a>
+                </li>
+                <li>
+                    <a href="https://css-tricks.com">CSS Tricks</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com">W3schools</a>
+                </li>
+                <li>
+                    <a href="https://www.udemy.com">Udemy</a>
+                </li>
+                <li>
+                    <a href="https://placehold.co">Image Placeholder</a>
+                </li>
+            </ul>
 
         </section>
     </main>
     <footer>
-         
-        <p id="currentYear"> &copy; Maria Laura Roas - Cordoba </p>
-        <p id="lastModified">Last Modification: </p>
+        <p>
+            &copy;
+            <span id="currentYear">2025</span>
+            Maria Laura Roas - Cordoba, Argentina   
+        </p>
+        <p>
+            Last Modified: 
+            <span id="lastModified"></span> 
+
+        </p>
     </footer>
 
 </body>
