@@ -1,32 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Patrick+Hand&display=swap');
 
 /* my home page */
 
 body {
-   
+    display: block;
     background-color:white; 
-    font-family: Bree, Georgia, serif;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+
 }
 #content {
     max-width: 750px;
-    margin: 0 auto;   
+    margin: auto;   
 }
 header {
-    background-color:#042e69 ;
+    background-color:#043d8d ;
     display:block;
-    justify-content: center;
+    unicode-bidi: isolate;
+    text-align:  center;  
+}
+#course-title {
     color: white;
 }
+#name {
+    color: bisque;
+}
+
 nav {
     display: flex;
     justify-content: center;
+    align-content: center;
     background-color: #010711;
-    text-align: center;
-}
-nav a {
-    
+}   
+nav a{
+
     color: white;
     text-decoration: none;
     padding: 35px;
@@ -34,31 +40,75 @@ nav a {
   
 }
 nav a:hover {
-    background-color: #044872;
-    color: black;
-    border-radius: 3px;
+    color:chocolate 
 } 
-.card {
+main {
     display: grid;
-    grid-template-columns:(1fr, 1fr)
+    grid-template-columns: 2fr 1fr;
     
 }
-image {
+.card {
+    display: grid;
+    grid-template-columns:(auto auto 1fr);
+    margin: 10px;;
+   
+    
+}
+.card h2 {
+    background-color: #0860db;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    color: bisque;
+}
+
+.profile p {
+    display: block;
+    padding: 10px;
+}
+.profile img {
     float: right;
 }
-card-image {
-        max-width: 100%;
-        height: auto;
+.country p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.country img, figure {
+    float: left;
+    margin: 10px;
+}
+
+.country h3 {
+    text-align: center;
+}
+.country  figcaption {
+    text-align: center;
+    font-style: italic;
+    
+}
+.card-resources {
+    margin: 10px;
+   
+}
+.card-resources h2{
+    background-color: #0860db;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    color: bisque;
+}
+.card-resources ul{
+    padding: 1rem;
+    margin: 50px 25px 0 25px;
 }
 footer {
     background-color:#1d3557;
     color: white;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}  
-
+    padding: 1rem;
+    text-align: center;
+}
 @media screen and (max-width: 900px) {
     body {
         font-size: 1vw;
