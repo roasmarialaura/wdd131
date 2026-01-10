@@ -47,6 +47,7 @@ main {
     grid-template-columns: 2fr 1fr;
     
 }
+
 .card {
     display: grid;
     grid-template-columns:(auto auto 1fr);
