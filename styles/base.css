@@ -13,7 +13,7 @@ body {
     margin: auto;   
 }
 header {
-    background-color:#043d8d ;
+    background-color: rgb(4, 61, 141);;
     display:block;
     unicode-bidi: isolate;
     text-align:  center;  
@@ -21,15 +21,13 @@ header {
 #course-title {
     color: white;
 }
-#name {
-    color: bisque;
-}
 
 nav {
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: #010711;
+    background-color: #01050e;
+
 }   
 nav a{
 
@@ -40,8 +38,12 @@ nav a{
   
 }
 nav a:hover {
-    color:chocolate 
+    color:rgb(241, 103, 4) 
 } 
+h1 {
+    display: flex;
+    justify-content: center;
+}
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -49,9 +51,8 @@ main {
 }
 
 .card {
-    display: grid;
-    grid-template-columns:(auto auto 1fr);
-    margin: 10px;;
+    grid-template-columns:auto auto 1fr;
+    margin: 10px;
    
     
 }
@@ -63,12 +64,16 @@ main {
     color: bisque;
 }
 
-.profile p {
-    display: block;
-    padding: 10px;
+.profile {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 15px;
 }
+
 .profile img {
-    float: right;
+    max-width: 150px;
+    margin-left: auto;
 }
 .country p {
     display: flex;
@@ -76,7 +81,8 @@ main {
     gap: 10px;
     
 }
-.country img, figure {
+.country img,
+.country figure {
     float: left;
     margin: 10px;
 }
@@ -86,24 +92,9 @@ main {
 }
 .country  figcaption {
     text-align: center;
-    font-style: italic;
-    
+    font-style: italic;  
 }
-.card-resources {
-    margin: 10px;
-   
-}
-.card-resources h2{
-    background-color: #0860db;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 10px;
-    color: bisque;
-}
-.card-resources ul{
-    padding: 1rem;
-    margin: 50px 25px 0 25px;
-}
+
 footer {
     background-color:#1d3557;
     color: white;
