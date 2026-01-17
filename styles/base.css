@@ -18,7 +18,7 @@ header {
     unicode-bidi: isolate;
     text-align:  center;  
 }
-#course-title {
+ header #course-title {
     color: #FFFFFF;
 }
 
