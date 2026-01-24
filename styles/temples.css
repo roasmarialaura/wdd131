@@ -13,8 +13,7 @@ header {
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
-	
-	
+		
 }
 
 header,
@@ -63,8 +62,7 @@ h1 {
     display: block;
 }
 #menu.show::before {
-    content: "x";
-  
+    content: "x"; 
 }
 
 nav a {
@@ -76,11 +74,6 @@ nav a {
 	font-size: larger;
 }
 
-/*nav a:hover {
-	text-decoration: none;
-	background-color: grey;
-	color: #000;
-}*/
 
 main h2 {
     font-size: 2.5rem;
@@ -88,31 +81,27 @@ main h2 {
     color: black;
     grid-column: 1 / -1;
     text-align: center;
-    }
+}
 main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 2rem;
-    
+    padding: 2rem;   
 }
+
 figure {
     text-align: center;
-
 }
 figure img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 5px;
-
 } 
 figcaption {
     text-align: center;
 }   
     
-
-
 footer {
     background-color:#b683f0;
     color: white;
