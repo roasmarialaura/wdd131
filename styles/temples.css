@@ -13,7 +13,7 @@ header {
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	
 	
 }
 
@@ -65,10 +65,10 @@ main {
     content: "x";
   
 }
-span {
+#title {
     text-align: left;
     color: white;
-    
+    font-weight: bold;
 }
 nav a {
 	display: block;
@@ -91,12 +91,12 @@ h1 {
     color: black;
     text-align: center;
     }
-main .galery{
+main .gallery{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 2rem;
-
+}
 figure img {
     width: 100%;
     height: auto;
@@ -108,7 +108,7 @@ figcaption {
     text-align: center;
 }   
     
-}
+
 
 footer {
     background-color:#b683f0;
