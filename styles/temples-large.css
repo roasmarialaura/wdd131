@@ -1,0 +1,27 @@
+
+@media (min-width: 40em) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+    .navigation {
+        display: flex;
+    }
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: right;
+	}
+    #menu {
+        display: none;
+    }
+    main .galery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+}
