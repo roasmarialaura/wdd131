@@ -31,8 +31,7 @@ main {
     text-align: right;
 }
 #menu::before {
-    content: "≡";
-    
+    content: "≡";   
 }
 
 .navigation {
