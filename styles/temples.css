@@ -13,6 +13,7 @@ header {
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
+    color: white;
 		
 }
 
@@ -20,6 +21,11 @@ header,
 main {
 	margin: 0 auto;
 }
+h1 {
+    color: white;
+}
+
+
 #menu {
     display: block;
     font-size: 2rem;
@@ -28,12 +34,22 @@ main {
     padding: .5rem .75rem;
     color: #fff;
     text-align: right;
+    position: relative;
+    background: none;
+    border: none;
+}   
+#menu::before,
+#menu::after {
+  content: "";
+  position: absolute;
+  
 }
+
 #menu::before {
     content: "≡";   
 }
-h1 {
-    color: white;
+#menu.show::before {
+    content: "x"; 
 }
 .navigation {
     list-style: none;
@@ -42,6 +58,9 @@ h1 {
 }
 .navigation li {
     display: none;
+}
+.navigation.show li{
+    display: block;
 }
 .navigation a {
     display: block;
@@ -55,15 +74,11 @@ h1 {
 }
 .navigation a:hover, .navigation a:active {
     text-decoration: none;
-	background-color: rgb(67, 175, 238);
+	background-color: white;
 	color: #000;
 }
-.show li {
-    display: block;
-}
-#menu.show::before {
-    content: "x"; 
-}
+
+
 
 nav a {
 	display: block;
@@ -109,6 +124,9 @@ footer {
     text-align: center;
 }
 
+
+
+   
 
 
 
