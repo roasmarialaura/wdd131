@@ -1,4 +1,3 @@
-
 @media (min-width: 40em) {
 	header {
 		display: flex;
@@ -10,11 +9,11 @@
     }
 	.navigation li {
 		display: block;
-		flex: 1 1 100%;
+		/*flex: 1 1 100%;*/
 	}
-	.navigation a {
+	/*.navigation a {
 		text-align: right;
-	}
+	}*/
     #menu {
         display: none;
     }
@@ -23,7 +22,7 @@
         grid-template-columns: repeat(3, 1fr);
     
     }
-    figure {
+    /*figure {
         max-width: none;
-    }
+    }*/
 }
