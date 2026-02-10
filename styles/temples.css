@@ -21,7 +21,7 @@ header,
 main {
 	margin: 0 auto;
 }
-header div {
+header h1 {
     color: white;
 }
 
@@ -90,7 +90,7 @@ nav a {
 }
 
 
-main h1 {
+main h2 {
     font-size: 2.5rem;
     margin: 1rem;
     color: black;
