@@ -51,19 +51,19 @@ header h1 {
 #menu.show::before {
     content: "x"; 
 }
-.navigation {
+nav {
     list-style: none;
     margin: 0 auto;
     max-width: 640px;
 }
-.navigation li {
+/*.navigation li {
     display: none;
-}
-.navigation.show li{
+}*/
+nav.show a{
     display: block;
 }
-.navigation a {
-    display: block;
+nav a {
+    display: block ;
     padding: 0.75rem;
     text-align: center;
     text-decoration: none;
@@ -72,7 +72,7 @@ header h1 {
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
-.navigation a:hover, .navigation a:active {
+nav a:hover, nav a:active {
     text-decoration: none;
 	background-color: white;
 	color: #000;
