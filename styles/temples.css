@@ -9,9 +9,9 @@ body {
 }
 
 header {
-	background-color:#b683f0;
+	background-color:#8325ee;
 	display: grid;
-	grid-gap: 1rem;
+    grid-gap: 1rem;
 	padding: 20px;
     color: white;
 		
@@ -25,23 +25,22 @@ header h1 {
     color: white;
 }
 
-
 #menu {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
-    color: #fff;
-    text-align: right;
+    color:white;
     position: relative;
+    text-align: right;
     background: none;
     border: none;
 }   
 #menu::before,
 #menu::after {
   content: "";
-  position: absolute;
+  /*position: absolute;*/
   
 }
 
@@ -56,10 +55,10 @@ nav {
     margin: 0 auto;
     max-width: 640px;
 }
-/*.navigation li {
+nav {
     display: none;
-}*/
-nav.show a{
+}
+nav.show {
     display: block;
 }
 nav a {
@@ -75,20 +74,8 @@ nav a {
 nav a:hover, nav a:active {
     text-decoration: none;
 	background-color: white;
-	color: #000;
+	color: black;
 }
-
-
-
-nav a {
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
-	font-size: larger;
-}
-
 
 main h2 {
     font-size: 2.5rem;
@@ -118,7 +105,7 @@ figcaption {
 }   
     
 footer {
-    background-color:#b683f0;
+    background-color:#8325ee;
     color: white;
     padding: 1rem;
     text-align: center;
