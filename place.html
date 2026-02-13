@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Dynamic Web Fundamentals - Maria Laura Roas - Country Page</title>
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Maria Laura Roas- My Home Page">
+    <meta name="author" content="Maria Laura Roas">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Azerbaijan</h1>
+    </header>
+    <main>
+        <div class="place">
+            <picture>
+                <source srcset="images/azerbaijan-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/azerbaijan-medium.webp" media="(min-width: 500px)">
+                <img src="images/azerbaijan-small.webp" alt="Azerbaijan" width="500" height="250">
+            </picture>
+        </div>
+        <ul class="data" data-title="Data"></ul>
+        <ul class="weather" data-title="Weather"></ul>
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentYear">2026</span>
+            Maria Laura Roas - Cordoba, Argentina   
+        </p>
+        <p>
+            Last Modified: 
+            <span id="lastModified"></span> 
+
+        </p>
+    </footer>
+    
+</body>
+</html>
