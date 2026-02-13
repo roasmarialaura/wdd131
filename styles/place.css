@@ -1,0 +1,98 @@
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+header {
+    background-color: #E30A17;       
+    border-top: 10px solid #00B5E2;   
+    border-bottom: 10px solid #3F9C35;
+    /*display:block;*/
+    text-align:  center; 
+    padding: 1rem; 
+}
+h1{
+    color: white;
+    font-size: 2rem;
+}
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.place img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul.data::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  background-color: #3F9C35;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+}
+ul.data::after {
+  content: "Area: 86,600 sq km\A Population: 10.3 million\A Capital: Baku\ALanguage: Azerbaijani\A Currency: Azerbaijan Manat (AZN)\A TimeZone: UTC+4\A CallingCode: +994\A InternetTLD: .az";
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  color: black;
+  font-size: 16px;
+  background-color: white;
+  padding: 40px 10px 10px 10px;
+  border-radius: 5px;
+  white-space: pre-line;
+}
+ul.weather::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  background-color: #3F9C35;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+}
+ul.weather::after {
+  content: "Temperature: 0°C\A Conditions: Snowy\A Wind: 26km/h\A WindChill: ";
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  color: black;
+  font-size: 16px;
+  background-color: white;
+  padding: 20px 10px 10px 10px; 
+  border-radius: 5px;
+  white-space: pre;
+}
+
+footer {
+    background-color:  #E30A17;
+    color: white;
+    border-top: 10px solid #00B5E2;   
+    border-bottom: 10px solid #3F9C35;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 40em) {
+
+}
+
+  
+
+
+
+ 
