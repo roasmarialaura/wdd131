@@ -24,8 +24,7 @@ header {
 
 .hero {
   position: relative;
-  /*width: 100%;*/
-  
+  /*width: 100%;*/ 
 }
 
 .hero img {
@@ -39,7 +38,6 @@ header {
   margin: 1rem;
   padding: 0;
   border-radius: 0;
-  
   position: static;
   
 }
