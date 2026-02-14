@@ -17,16 +17,22 @@
         <h1>Azerbaijan</h1>
     </header>
     <main>
-        <div class="place">
+        <div class="hero">
             <picture>
-                <source srcset="images/azerbaijan-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/az-place-large.webp" media="(min-width: 1000px)">
                 <source srcset="images/azerbaijan-medium.webp" media="(min-width: 500px)">
                 <img src="images/azerbaijan-small.webp" alt="Azerbaijan" width="500" height="250">
             </picture>
         </div>
-        <ul class="data" data-title="Data"></ul>
-        <ul class="weather" data-title="Weather"></ul>
-            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+        <section class="data">
+            <h2>Data</h2>
+            <ul id="dataList"></ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Cloudy Weather icon" class="weather-icon">
+            <ul id="weatherList"></ul>
+        </section>
     </main>
     <footer>
         <p>
