@@ -1,20 +1,166 @@
+:root {
+  --primary-color: #E30A17;
+  --secondary-color: #00B5E2;
+  --accent-color: #3F9C35;
+  --box-bg: rgba(255,255,255,0.9);
+  --text-dark: #000;
+  --text-light: #fff;
+}
+
 body, html {
-  height: 100%;
-  font-family: Arial, sans-serif;
+    margin:0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 header {
-    background-color: #E30A17;       
-    border-top: 10px solid #00B5E2;   
-    border-bottom: 10px solid #3F9C35;
+    background-color: var(--primary-color);
+    border-top: 10px solid var(--secondary-color);
+    border-bottom: 10px solid var(--accent-color);
     /*display:block;*/
     text-align:  center; 
     padding: 1rem; 
+    color: var(--text-light);
 }
-h1{
+
+.hero {
+  position: relative;
+  width: 100%;
+  
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*display: block;*/
+}
+
+.data, .weather {
+  background-color: var(--box-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem;
+  position: absolute;
+  top: 20px;
+  width: 250px;
+}
+/*ata, .weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather-icon {
+  width: 50px;
+}*/
+.data h2, .weather h2 {
+  background-color: var(--accent-color);
+  color: var(--text-light);            
+  text-align: center;
+  padding: 10px 20px; 
+  display: flex;
+  align-items: center;
+  position: relative;        
+         
+  margin: 0 0 10px 0;        
+       
+}
+.data h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  
+ 
+}
+.weather h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  
+  
+  width: 10px;
+  height: 10px;
+
+ 
+}
+/*.data{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+} 
+.weather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather-icon {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+.data, .weather {
+  background-color: var(--box-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  position: absolute;
+  top: 20px;
+  width: 250px;
+}*/
+
+.weather h2 img.weather-icon {
+  width: 30px;
+  height: auto;
+  margin-left: 10px;
+  display: inline-block; 
+}
+
+
+footer {
+  background-color: var(--primary-color);
+  border-top: 10px solid var(--secondary-color);
+  border-bottom: 10px solid var(--accent-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+}
+
+/*@media (min-width: 1000px) {
+
+  
+  .data { left: 20px; }
+  .weather { right: 20px; }
+
+
+  .data h2, .weather h2 {
+    justify-content: flex-start;
+    margin: 0 0 10px 0;
+  }
+
+  
+  .weather h2::after {
+    content: " ⛅"; 
+    width: auto;
+    height: auto;
+    background: none;
+  }
+
+ 
+  .weather h2 img.weather-icon {
+    display: none;
+  }
+
+  
+  .data, .weather {
+    width: 35%;
+  }
+}*/
+/*h1{
     color: white;
     font-size: 2rem;
-}
-main {
+}*/
+/*main {
   position: relative;
   width: 100%;
   height: 100vh; 
@@ -25,9 +171,9 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+}*/
 
-ul.data::before {
+/*ul.data::before {
   content: attr(data-title);
   position: absolute;
   top: 30px;
@@ -76,18 +222,44 @@ ul.weather::after {
   padding: 20px 10px 10px 10px; 
   border-radius: 5px;
   white-space: pre;
-}
+}*/
 
-footer {
-    background-color:  #E30A17;
-    color: white;
-    border-top: 10px solid #00B5E2;   
-    border-bottom: 10px solid #3F9C35;
-    padding: 1rem;
-    text-align: center;
-}
 
-@media (min-width: 40em) {
+
+@media (min-width: 1000px) {
+  .data, .weather {
+    position: absolute;
+    top: 70px;
+    width: 300px;
+    margin: 0;
+  }
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  .data { left: 50px; }
+  .weather { right: 50px; }
+
+  .data h2, .weather h2 {
+    text-align: left;     
+    margin: 0 0 10 0;
+    display: block;       
+  }
+  .weather h2::after {
+    content: ""; 
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  /*.weather-icon {
+    
+    width: 40px;
+  }*/
+  /*.weather h2::after {
+    content: " ❄️"; 
+    font-size: 1.5rem;
+  }*/
 
 }
 
