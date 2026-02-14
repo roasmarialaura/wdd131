@@ -37,7 +37,6 @@ header {
 
 .data, .weather {
   margin: 1rem;
-  background-color: none;
   padding: 0;
   border-radius: 0;
   
