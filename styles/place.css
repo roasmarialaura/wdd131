@@ -22,102 +22,67 @@ header {
     color: var(--text-light);
 }
 
-/*.hero {
+.hero {
   position: relative;
-  width: 100%;
+  /*width: 100%;*/
   
-}*/
+}
 
 .hero img {
   width: 100%;
-  height: 100%;
+  height: auto;
   /*object-fit: cover;*/
   display: block;
 }
 
 .data, .weather {
-  background-color: var(--box-bg);
-  padding: 1rem;
-  border-radius: 8px;
   margin: 1rem;
-  /*position: relative;
-  top: 20px;
-  width: 250px;*/
+  background-color: none;
+  padding: 0;
+  border-radius: 0;
+  
+  position: static;
+  
 }
 h1, h2 {
   text-align: center;
 }
-/*ata, .weather {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.weather-icon {
-  width: 50px;
-}*/
-.data h2, .weather h2 {
+
+
+.data h2 {
   background: none;
-  color: var(--text-dark); /* texto oscuro para buen contraste */
+  color: var(--text-dark);
   padding: 0;
-  
-  /*display: flex;
-  align-items: center;*/
-  position: relative;        
+  text-align: center;       
          
-  margin: 0 0 10px 0;        
+  margin-bottom: 10px;        
        
 }
-
-.weather h2::after {
+.weather-title {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+.weather-title::after {
   content: "";
   display: block;
-  width: 40px;
-  height: 40px;
-  margin: 10px auto 0 auto;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M112 256C112 167.6 183.6 96 272 96C319.1 96 361.4 116.4 390.7 148.7C401.3 145.6 412.5 144 424 144C490.3 144 544 197.7 544 264C544 277.2 541.9 289.9 537.9 301.8C579.5 322.9 608 366.1 608 416C608 486.7 550.7 544 480 544L176 544C96.5 544 32 479.5 32 400C32 343.2 64.9 294.1 112.7 270.6C112.3 265.8 112 260.9 112 256zM272 144C210.1 144 160 194.1 160 256C160 264.4 160.9 272.6 162.7 280.5C165.4 292.6 158.4 304.8 146.6 308.6C107.9 321 80 357.3 80 400C80 453 123 496 176 496L480 496C524.2 496 560 460.2 560 416C560 378.6 534.3 347.1 499.5 338.4C492 336.5 485.9 331.2 483 324.1C480.1 317 480.9 308.9 485 302.4C492 291.3 496 278.2 496 264.1C496 224.3 463.8 192.1 424 192.1C412.9 192.1 402.5 194.6 393.2 199C382.7 204 370.1 200.7 363.4 191.2C343.1 162.6 309.7 144.1 272.1 144.1z"/></svg>');
+  width: 20px;       
+  height: 20px;
+  margin-top: 10px;
+  background-image: url('images/weather.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /*: absolute;
-  top: 50%;
-  
-  
-  width: 10px;
-  height: 10px;*/
-
- 
 }
-/*.data{
-  display: flex;
-  flex-direction: column;
-  align-items: center
-} 
-.weather{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.data ul,
+.weather ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.weather-icon {
-  width: 50px;
-  height: auto;
-  display: block;
-  margin-top: 10px;
-}
-.data, .weather {
-  background-color: var(--box-bg);
-  padding: 1rem;
-  border-radius: 8px;
-  position: absolute;
-  top: 20px;
-  width: 250px;
-}
-
-.weather h2 img.weather-icon {
-  width: 30px;
-  height: auto;
-  margin-left: 10px;
-  display: inline-block; 
-}*/
 
 
 footer {
@@ -129,120 +94,25 @@ footer {
   padding: 1rem;
 }
 
-/*@media (min-width: 1000px) {
-
-  
-  .data { left: 20px; }
-  .weather { right: 20px; }
-
-
-  .data h2, .weather h2 {
-    justify-content: flex-start;
-    margin: 0 0 10px 0;
-  }
-
-  
-  .weather h2::after {
-    content: " ⛅"; 
-    width: auto;
-    height: auto;
-    background: none;
-  }
-
- 
-  .weather h2 img.weather-icon {
-    display: none;
-  }
-
-  
-  .data, .weather {
-    width: 35%;
-  }
-}*/
-/*h1{
-    color: white;
-    font-size: 2rem;
-}*/
-/*main {
-  position: relative;
-  width: 100%;
-  height: 100vh; 
-  overflow: hidden;
-}
-
-.place img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}*/
-
-/*ul.data::before {
-  content: attr(data-title);
-  position: absolute;
-  top: 30px;
-  left: 20px;
-  background-color: #3F9C35;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 18px;
-  z-index: 2;
-}
-ul.data::after {
-  content: "Area: 86,600 sq km\A Population: 10.3 million\A Capital: Baku\ALanguage: Azerbaijani\A Currency: Azerbaijan Manat (AZN)\A TimeZone: UTC+4\A CallingCode: +994\A InternetTLD: .az";
-  position: absolute;
-  top: 40px;
-  left: 30px;
-  color: black;
-  font-size: 16px;
-  background-color: white;
-  padding: 40px 10px 10px 10px;
-  border-radius: 5px;
-  white-space: pre-line;
-}
-ul.weather::before {
-  content: attr(data-title);
-  position: absolute;
-  top: 30px;
-  right: 60px;
-  background-color: #3F9C35;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 18px;
-  z-index: 2;
-}
-ul.weather::after {
-  content: "Temperature: 0°C\A Conditions: Snowy\A Wind: 26km/h\A WindChill: ";
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  color: black;
-  font-size: 16px;
-  background-color: white;
-  padding: 20px 10px 10px 10px; 
-  border-radius: 5px;
-  white-space: pre;
-}*/
-
-
 
 @media (min-width: 1000px) {
   .data, .weather {
     position: absolute;
     top: 150px;
     width: 250px;
-    /*margin: 0;*/
+    background-color: var(--box-bg);
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
   }
-  /*.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-  }*/
-  .data { left: 50px; }
-  .weather { right: 50px; }
+  .data { 
+    left: 50px;
+   
+  }
+  .weather { 
+    right: 50px; 
+    
+  }
 
   .data h2 {
     background-color: var(--accent-color);
@@ -250,7 +120,6 @@ ul.weather::after {
     padding: 10px 20px;
     left: -35px;
     text-align: left;
-
   }
    
   .weather h2 {
@@ -261,26 +130,20 @@ ul.weather::after {
     text-align: left;
     
   }
-  .weather h2::after {
-    display: inline-block;
-    width: 30px;
+
+  .weather-title::after {
+    width: 30px;     
     height: 30px;
     margin: 0 0 0 10px;
-    vertical-align: middle;
-    /*content: ""; 
-    width: auto;
-    height: auto;
-    background: none;*/
+    display: inline-block;
   }
-  /*.weather-icon {
-    
-    width: 40px;
-  }*/
-  /*.weather h2::after {
-    content: " ❄️"; 
-    font-size: 1.5rem;
-  }*/
-
+  .weather-icon {
+    width: 30px;
+    height: 30px;
+    position: static;
+    margin-left: 10px;
+  }
+  
 }
 
   
