@@ -125,7 +125,6 @@ select{
   border-radius: 6px;
   background-color: white;
   cursor: pointer;
-  transition: 0.25;
   width: 100%;
 }
 .checkbox-group input[type="checkbox"]{
