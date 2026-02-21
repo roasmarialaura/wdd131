@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Dynamic Web Fundamentals - Maria Laura Roas - Product Form Page</title>
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Maria Laura Roas- My Home Page">
+    <meta name="author" content="Maria Laura Roas">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/form.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <h1>Product review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" class="product-form">
+        <div class="form-group">
+            <label for="product-name">Product Name <span class="required"></span></label>
+            <select id="product-name" name="name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+        
+        </div>
+
+        <fieldset class="star-rating-container">
+            <legend class="rating-title">Overall Rating</legend>
+
+            <div class="star-options">
+                <div class="star-option">
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" class="stars">☆</label>
+                    <div class="circle"></div>
+                </div>
+                <div class="star-option">
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" class="stars">☆☆</label>
+                    <div class="circle"></div>
+                </div>
+                <div class="star-option">
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" class="stars">☆☆☆</label>
+                    <div class="circle"></div>
+                </div>
+                <div class="star-option">
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" class="stars">☆☆☆☆</label>
+                    <div class="circle"></div>
+                </div>
+                <div class="star-option">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" class="stars">☆☆☆☆☆</label>
+                    <div class="circle"></div>
+                <div>
+            </div>
+        </fieldset>
+        <div class="form-group">
+            <label for="installDate">Date of Installation:</label>
+            <input 
+                type="date" 
+                id="installDate" 
+                name="installDate" 
+                required>
+        </div>
+        <div class="form-group check-group">
+            <p>Which features did you find useful in the product?</p>
+            <p>(Check all that apply)</p>
+            <label>
+                <input type="checkbox" name="features" value="durability" required>
+                Durability
+            </label>
+            <label>
+                <input type="checkbox" name="features" value="ease of use">
+                Ease of use
+            </label>
+            <label>
+                <input type="checkbox" name="features" value="performance">
+                Performance
+            </label>
+            <label>
+                <input type="checkbox" name="features" value="design">
+                Design
+            </label>
+         </div>
+
+         <div class="form-group>
+            <label for="review">Written Review<span class="optional">(Optional)</span></label>
+            <textarea name="review" id="review" rows="4"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" name="userName" id="userName"/>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Post Review" />
+        </div>
+        </form>
+
+
+    </main>
+
+    <footer>
+        <p>
+            &copy;
+            <span id="currentYear">2026</span>
+            Maria Laura Roas - Cordoba, Argentina   
+        </p>
+        <p>
+            Last Modified: 
+            <span id="lastModified"></span> 
+        </p>
+    </footer>
+    
+</body>
+</html>
