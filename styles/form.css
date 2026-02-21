@@ -103,7 +103,7 @@ select{
   background-color: white; 
 }
 .star-option input:checked + label + .circle{
-  background-color: rgba(76, 0, 255,02);
+  background-color:  #FFFFFF33;
 }
 .checkbox-group{
   display: flex;
@@ -154,9 +154,7 @@ footer {
   .checkbox-group{
     align-items: flex-start;
   }
-}
 
-@media (min-width:75em){
   form.product-form {
     background-color: transparent;
     max-width: 700px;
@@ -170,5 +168,5 @@ footer {
     flex-wrap: nowrap;
     justify-content: flex-start;
   }
-  
-} 
+}  
+
