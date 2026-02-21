@@ -96,7 +96,7 @@ select{
 }
 
 .star-option .stars:hover {
-  color: rgb(76, 0, 255);
+  color: #8325ee;
 }
 .star-option .circle {
   width: 20px;
