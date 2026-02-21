@@ -60,25 +60,8 @@ stars.forEach((star, idx) => {
   });
 });
 
-/*st productSelect = document.getElementById("product-name");
-products.forEach(product => {
-  const option = document.createElement("option");
-  option.value = product.id;       // El id como value
-  option.textContent = product.name; // El nombre como texto visible
-  productSelect.appendChild(option);
-});
 
-// Manejo del contador de reseñas en localStorage
-document.addEventListener("DOMContentLoaded", () => {
-  // Recuperar el contador desde localStorage
-  let reviewCount = localStorage.getItem("reviewCount") || 0;
 
-  // Incrementar el contador y guardarlo
-  reviewCount = Number(reviewCount) + 1;
-  localStorage.setItem("reviewCount", reviewCount);
-
-  console.log(`Total reviews submitted: ${reviewCount}`);
-});*/
 
 const currentYear = document.querySelector('#currentYear');
 
