@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Dynamic Web Fundamentals - Maria Laura Roas - Siteplan Page</title>
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Maria Laura Roas- My Home Page">
+    <meta name="author" content="Maria Laura Roas">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+    
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <section class="tour-request">
+    <div class="form-container">
+        <h1>Tour Guide Request</h1>
+
+        <form id="tourForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <p>Experience Type</p>
+
+                <label class="radio-option">
+                    <input type="radio" name="experienceType" value="Campsite" required>
+                    Campsite
+                </label>
+
+                <label class="radio-option">
+                    <input type="radio" name="experienceType" value="Rivers">
+                    Rivers
+                </label>
+
+                <label class="radio-option">
+                    <input type="radio" name="experienceType" value="City">
+                    City
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="whatsapp">WhatsApp Number</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required>
+            </div>
+
+            <button type="submit" class="tour-btn">Request</button>
+
+            <div id="message"></div>
+
+        </form>
+    </div>
+    </section>
+    
+    <footer>
+        <p>
+            &copy;
+            <span id="currentYear">2026</span>
+            Maria Laura Roas - Cordoba, Argentina   
+        </p>
+        <p>
+            Last Modified: 
+            <span id="lastModified"></span> 
+        </p>
+    </footer>
+    
+</body>
+</html>
