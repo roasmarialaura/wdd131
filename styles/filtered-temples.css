@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #0682b3;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 20px;
+  color: white;
+}
+header,
+main {
+  margin: 0 auto;
+}
+header h1 {
+  color: white;
+}
+
+#menu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  color: white;
+  position: relative;
+  text-align: right;
+  background: none;
+  border: none;
+}
+#menu::before,
+#menu::after {
+  content: "";
+  
+}
+
+#menu::before {
+  content: "≡";
+}
+#menu.show::before {
+  content: "x";
+}
+nav {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 640px;
+  display: none;
+}
+nav.show {
+  display: block;
+}
+nav a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+nav a:hover,
+nav a:active {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+main h2 {
+  font-size: 2.5rem;
+  margin: 1rem;
+  color: black;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+.temple-grid section {
+  background-color: rgb(231, 228, 228);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.label {
+  font-weight: bold;
+  text-align: center;
+}
+section img{
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border: 1px solid gray;
+  box-shadow: 0 0 10px gray;
+  
+}
+img{
+    animation: fade 5s;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+footer {
+  background-color: #0682b3;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav {
+    display: flex;
+  }
+  nav a {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+  .temple-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
