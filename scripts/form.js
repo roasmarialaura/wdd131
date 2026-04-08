@@ -63,12 +63,6 @@ stars.forEach((star, idx) => {
 
 
 
-const currentYear = document.querySelector('#currentYear');
-
-const lastModified = document.querySelector("#lastModified");
-
-const today = new Date();
-
-
-
-document.getElementById("lastModified").innerHTML = document.lastModified;
+let today = new Date();
+document.getElementById("currentYear").innerHTML = `&copy;${today.getFullYear()}`;
+document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
