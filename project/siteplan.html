@@ -7,6 +7,9 @@
     <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Maria Laura Roas- My Home Page">
     <meta name="author" content="Maria Laura Roas">
     <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <script src="scripts/siteplan.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,6 +19,7 @@
         <h1>Cordoba Adventures</h1>
     </header>
     <main>
+        <section class="data">
         <h2>
             This name represents the different tourism options available in Cordoba, Argentina.
         </h2>
@@ -28,8 +32,27 @@
         <p>What options are available for exploring the mountains?</p>
         <p>What services are available in areas near rivers?</p>
         <p>What cities can I visit?</p>
+        <h3>Color schema</h3>
+        <p>--primary-color: #50ec63 for nav and footer;
+            --secondary-color: #f5ef6d for background;
+            --text-dark: #3455db for h1, h2;
+            --text-light:  #1e824c for h3, paragraph;
+        </p>
+        <h3>Typography</h3>
+        <p>font-family: "Pacifico", cursive;</p>
+        <h3>Wireframe</h3>
+        <img src="images/wireframe-mobile.drawio.png" alt="mobile view wireframe">
+        <img src="images/wireframe-wider-view.drawio.png" alt="home wireframe">
     </main>
-    <footer></footer>
+    <footer>
+        <p>
+            <span id="currentYear"></span>
+            Maria Laura Roas - Cordoba, Argentina   
+        </p>
+        <p>
+            <span id="lastModified"></span> 
+        </p>
+    </footer>
     
 </body>
 </html>
