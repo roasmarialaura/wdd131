@@ -12,7 +12,7 @@ body {
 	font-family: "Pacifico", cursive;
 }
 header {
-	background-color: var(--primary-color);
+	background-color: var(--primary-color, #50ec63);
 	display: grid;
     grid-gap: 1rem;
 	padding: 20px;
@@ -20,31 +20,30 @@ header {
 		
 }
 header h1 {
-    color: var(--text-dark);
-    font-family: 'Pacifico', cursive;
+    color: var(--text-dark, #3455db);
 
 }
 
 h2 {
-    color: var(--text-dark);
+    color: var(--text-dark, #3455db);
 }
 h3 {
-    color: var(--text-light);
+    color: var(--text-light, #1e824c);
 }
 
 main {
-    background-color:var(--secondary-color);
+    background-color:var(--secondary-color, #f5ef6d);
     display: block;
     width: 100%;
     height: auto;
 }
 p{
-    color: var(--text-light);
+    color: var(--text-light, #1e824c);
 }
 
 footer {
-    background-color:var(--primary-color);
-    color: var(--text-dark);
+    background-color:var(--primary-color, #50ec63);
+    color: var(--text-dark, #3455db);
     padding: 1rem;
     text-align: center;
 }
