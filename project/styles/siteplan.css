@@ -15,13 +15,59 @@ header {
 	background-color: var(--primary-color, #50ec63);
 	display: grid;
     grid-gap: 1rem;
-	padding: 20px;
-    
-		
+	padding: 20px;		
 }
-header h1 {
+h1 {
     color: var(--text-dark, #3455db);
+    font-size: 40px;
+}
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .75rem 1rem;
+    color: var(--text-dark);
+    position: relative;
+    text-align: right;
+    background: none;
+    border: none;
+}   
+#menu::before,
+#menu::after {
+  content: ""; 
+}
 
+#menu::before {
+    content: "≡";   
+}
+#menu.show::before {
+    content: "x"; 
+}
+nav {
+    list-style: none;
+    /*margin: 0 auto;*/
+    max-width: 640px;
+    display: none;
+    gap: 20px;
+}
+nav.show {
+    display: block;
+}
+nav a {
+    display: block ;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 25px;
+}
+nav a:hover, nav a:active {
+    text-decoration: none;
+	background-color: var(--text-dark);
+	color: var(--secondary-color);
 }
 
 h2 {
@@ -40,10 +86,100 @@ main {
 p{
     color: var(--text-light, #1e824c);
 }
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 0;
+  border-radius: 0;
+  
+}
+
+form.contactUs-form{
+    width: 95%;
+    max-width: 600px;
+    padding: 1rem;
+}
+.form-group{
+  margin-bottom: 1.5rem;
+}
+label{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid var(--text-light);
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: var(--text-dark);
+}
+.submit{
+    font-weight: bold;
+}
+
+img{
+    animation: fade 5s;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 footer {
     background-color:var(--primary-color, #50ec63);
     color: var(--text-dark, #3455db);
     padding: 1rem;
     text-align: center;
+}
+
+@media (min-width: 40em) {
+header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+        
+	}
+    nav {
+        display: flex;
+    }
+	nav a {
+		display: block;
+	
+	}
+	
+    #menu {
+        display: none;
+    }
+    .data {
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    width: 250px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+  }
 }
